@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.news.today.todayinformation">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">     <!--这里写在application标签下，则AppTheme这个style会应用于整个应用（全activity）
+                                                                                    注意若application中的style和activity中的style样式冲突，则activity中的会覆盖application中
+                                                                                    的style设置，优先级更高-->
+        <activity android:name=".SplashActivity"
+            android:theme="@style/FullScreen">  <!--这里引用style里的风格，所以要到style.xml中去添加实现这个全屏风格；且该风格只应用于该activity中-->
+
+            <intent-filter><!--https://blog.csdn.net/luoshengyang/article/details/6689748 详解Activity启动过程-->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+
+
+    </application>
+
+</manifest>

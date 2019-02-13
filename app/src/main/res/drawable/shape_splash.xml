@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="20dp" />
+    <solid android:color="@color/colorBlack_30"/>
+    <!--stroke标签定义边线属性-->
+    <stroke
+        android:width="1dp"
+        android:color="@color/colorTransparent"
+        />
+    <!--padding标签定义文字和边框的上下左右距离(好鸡肋...)-->
+    <padding
+        android:bottom="5dp"
+        android:top="5dp"
+        android:right="25dp"
+        android:left="25dp"
+        />
+
+</shape>

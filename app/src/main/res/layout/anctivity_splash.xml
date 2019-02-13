@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.news.today.todayinformation.FullScreenVideoView
+        android:id="@+id/vv_play"
+        style="@style/video_view_style" /> <!--这里重构了一下，把layout_width和height写进了style文件
+                                                                            主要目的是为了复用样式-->
+
+        <!--将此控件置于右上角: layout_gravity->right-->
+        <TextView
+            android:id="@+id/tv_splash_timer"
+            android:textSize="18dp"
+            android:textColor="@color/colorTransparent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="跳过"
+            android:background="@drawable/shape_splash"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content" />
+
+</FrameLayout>
